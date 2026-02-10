@@ -14,3 +14,10 @@ Esto esta pensado para correr en Windows 11 pero puede funcionar en otros entorn
    - Una vez instalados los modelos, puedes usar start_silent.vbs para iniciar el servidor sin ventana negra.
    - Puedes poner un acceso directo a start_silent.vbs en tu carpeta shell:startup para que arranque con Windows.
 5. Accede a la aplicación en: http://localhost:5000
+
+## Estructura 
+ - app.py: Núcleo lógico. Contiene la función install_languages y el algoritmo de pivoting.
+- requirements.txt: Dependencias mínimas (flask, argostranslate, lxml, werkzeug).
+- templates/index.html: Tu diseño exacto con JavaScript real conectado a la API.
+- run_server.bat: Script para crear el entorno virtual (venv) e instalar dependencias automáticamente.
+- start_silent.vbs: Script para ocultar la consola de comandos.
